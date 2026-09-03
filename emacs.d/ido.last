@@ -1,0 +1,52 @@
+;;; -*- coding: utf-8 -*-
+
+;; ----- ido-last-directory-list -----
+(
+ ("c:/Users/" . "blair/")
+ ("c:/" . "Users/")
+ ("c:/Users/blair/Desktop/" . "Snippets/")
+ ("c:/Users/blair/" . "Pictures/")
+)
+
+;; ----- ido-work-directory-list -----
+(
+ "c:/Users/blair/Pictures/"
+ "c:/Users/blair/Desktop/Snippets/"
+ "c:/Users/blair/.emacs.d/"
+)
+
+;; ----- ido-work-file-list -----
+(
+ "birds.jpg"
+ "first.cpp"
+ "init.el"
+ "cool fucking raven.jpg"
+ "67.jpg"
+ "straw.png"
+)
+
+;; ----- ido-dir-file-cache -----
+(
+ ("c:/Users/blair/Desktop/Snippets/" (27289 33087 499852 500000) "kirk.exe" "first.exe" "first.cpp" "../" "./")
+
+ ("c:/Users/blair/.emacs.d/" (27289 33091 131872 300000) "init.el" "ido.last" "elpa/" "eln-cache/" "backups/" "auto-save-list/" "../" "./")
+
+ ("c:/Users/blair/Pictures/" (27289 25491 872094 900000) "zizi.jpg" "yellow.jpg" "xfce.png" "xenia.png" "woods.jpg" "wolfdoll2.jpg" "wolfdoll.jpg" "winfetch.png" "watches.png" "Wallpapers/" "voyager.avif" "vi.png" "unique.jpg" "uelelele.jpg" "true.webp" "toothpick.png" "tonight.jpg" "tibetanfox.jpg" "The Moon.jpg" "the moon fell.jpg" "tear.png" "svalbard.jpg" "sure.png" "strawberry.webp" "straw.png" "stars.jpg" "starcigs.jpg" "sprigatito.jpg" "spat blood at god.jpg" "snake eater.jpg" "sign.jpg" "shimmer.jpg" "sharkwoods.jpg" "shane.jpg" "sepia_elster_alt.png" "Screenshots/" "scream.png" "rust.jpg" "rome.png" "rina2.jpeg" "rina.jpeg" "reflexes.png" "redlight.png" "redeye.jpg" "quietly.jpg" "que se foda.jpg" "PROMETA.png" "por_mim.png" "People's Republic of Folder/" "peak.jpeg" "paris.jpg" "ok.jpg" "OIEE.png" "nonalimen.jpg" "NIN.jpg" "nerdshane.jpg" "near.jpg" "narrator.jpg" "narration.jpg" "namgyu.jpg" "na moral.jpeg" "myeyesbleed.jpg" "missed out.png" "metrô situation.png" "melancoly.jpg" "meblushing.jpg" "me.jpeg" "McLovin.jpg" "mccutcheon.jpg" "mary.jpg" "marcille.jpg" "longstill.jpg" "longlegs.jpg" "linck.jpg" "lenses.jpg" "leaves.jpg" "lavigtiny.webp" "lavigne.jpg" "lamb.png" "kristen.jpg" "knight.png" "kids.png" "judah.jpg" "it_sCPP.png" "in_spite_of.png" "Icons/" "I have no mouth.jpg" "hurt people.webp" "howitfeels.jpg" "how I see you.jpg" "holliday.png" "hellothere.jpg" "helens-choice.jpg" "helena.jpg" "harking it.jpg" "harkerlonglegs.jpg" "graves.jpg" "glassbeach.jpg" "giver.webp" "fumodromo.jpg" "foxglove.png" "fogell2.jpg" "Fogell.jpg" "Flesh & Metal Creatures/" "flannel.jpg" "flag.png" "fireplace.jpg" "fine shit.png" "fagsmoker.png" "fagclub.jpg" "face.png" "eule.jpg" "ebaa.jpg" "duke.png" "desktop.ini" "deerbleed.jpg" "dayum.png" "Creatures/" "crab.jpg" "cool fucking raven.jpg" "come over.jpg" "cio.jpg" "chimke.png" "chappell suit.jpg" "chappell giver.jpg" "Camera Roll/" "cain.webp" "boot.jpg" "blairdraw.png" "blair.png" "birds.jpg" "birdie.jpg" "BEEEEER.jpg" "aufbruch.jpg" "araucauria.jpg" "apple.jpg" "andrade.jpg" "all yellow.jpg" "agalloch.jpg" "67.jpg" "4thegirls.jpg" "3month.png" "../" "./")
+
+ ("c:/Users/" (27283 10455 522217 900000) "Public/" "desktop.ini" "Default User/" "Default/" "blair/" "All Users/" "../" "./")
+
+ ("c:/Program Files/" (27288 44893 154967 900000) "WSL/" "WindowsPowerShell/" "WindowsApps/" "Windows Sidebar/" "Windows Photo Viewer/" "Windows NT/" "Windows Media Player/" "Windows Mail/" "Windows Defender Advanced Threat Protection/" "Windows Defender/" "Uninstall Information/" "SoulseekQt/" "NVIDIA Corporation/" "Notepad++/" "ModifiableWindowsApps/" "KeePassXC/" "Internet Explorer/" "Hyper-V/" "Google/" "EqualizerAPO/" "Emacs/" "desktop.ini" "Common Files/" "CodeBlocks/" "AMD/" "../" "./")
+
+ ("c:/Program Files/Emacs/" (27288 33920 872332 800000) "Uninstall-31.1.exe" "emacs-31.1/" "../" "./")
+
+ ("c:/Program Files/Emacs/emacs-31.1/" (27288 33905 991720 600000) "share/" "libexec/" "lib/" "include/" "bin/" "../" "./")
+
+ ("c:/Program Files/Emacs/emacs-31.1/bin/" (27288 33898 911115 700000) "zlib1.dll" "wasmtime.dll" "runemacs.exe" "libzstd.dll" "libXpm-nox4.dll" "libxml2-16.dll" "libwinpthread-1.dll" "libwebpdemux-2.dll" "libwebp-7.dll" "libunistring-5.dll" "libtree-sitter-0.26.dll" "libtiff-6.dll" "libthai-0.dll" "libtasn1-6.dll" "libstdc++-6.dll" "libsqlite3-0.dll" "libsharpyuv-0.dll" "librsvg-2-2.dll" "libpng16-16.dll" "libpixman-1-0.dll" "libpcre2-8-0.dll" "libpangowin32-1.0-0.dll" "libpangoft2-1.0-0.dll" "libpangocairo-1.0-0.dll" "libpango-1.0-0.dll" "libp11-kit-0.dll" "libnettle-8.dll" "libmpfr-6.dll" "libmpc-3.dll" "liblzma-5.dll" "libLerc.dll" "liblcms2-2.dll" "libjpeg-8.dll" "libjbig-0.dll" "libisl-23.dll" "libintl-8.dll" "libidn2-0.dll" "libiconv-2.dll" "libhogweed-6.dll" "libharfbuzz-0.dll" "libgraphite2.dll" "libgobject-2.0-0.dll" "libgnutls-30.dll" "libgmp-10.dll" "libgmodule-2.0-0.dll" "libglib-2.0-0.dll" "libgio-2.0-0.dll" "libgif-7.dll" "libgdk_pixbuf-2.0-0.dll" "libgcc_s_seh-1.dll" "libfribidi-0.dll" "libfreetype-6.dll" "libfontconfig-1.dll" "libffi-8.dll" "libexpat-1.dll" "libdeflate.dll" "libdatrie-1.dll" "libcairo-gobject-2.dll" "libcairo-2.dll" "libbz2-1.dll" "libbrotlienc.dll" "libbrotlidec.dll" "libbrotlicommon.dll" "etags.exe" "emacsclientw.exe" "emacsclient.exe" "emacs.exe" "emacs-31.1.exe" "ebrowse.exe" "addpm.exe" "../" "./")
+
+ ("c:/Users/blair/Desktop/" (27289 23850 58102 600000) "YouTube.lnk" "Visual Studio Code.lnk" "Studies/" "Snippets/" "MusicBee.lnk" "mpv.lnk" "Google Drive.lnk" "Google Agenda.lnk" "Gmail.lnk" "Emacs.lnk" "Discord.lnk" "desktop.ini" "CodeBlocks.lnk" "clue.md" "../" "./")
+
+ ("c:/Users/blair/" (27288 42579 64108 0) "vscode-remote-wsl/" "Videos/" "Templates/" "Start Menu/" "SendTo/" "Searches/" "Saved Games/" "Recent/" "PrintHood/" "Pictures/" "OneDrive/" "ntuser.ini" "NTUSER.DAT{0c1c84b8-a40a-11f1-a824-ab87bd3cf883}.TMContainer00000000000000000002.regtrans-ms" "NTUSER.DAT{0c1c84b8-a40a-11f1-a824-ab87bd3cf883}.TMContainer00000000000000000001.regtrans-ms" "NTUSER.DAT{0c1c84b8-a40a-11f1-a824-ab87bd3cf883}.TM.blf" "ntuser.dat.LOG2" "ntuser.dat.LOG1" "NTUSER.DAT" "NetHood/" "My Documents/" "Music/" "Local Settings/" "Links/" "Favorites/" "Downloads/" "Documents/" "Desktop/" "Cookies/" "Contacts/" "Application Data/" "AppData/" ".vscode-shared/" ".vscode/" ".emacs.d/" ".copilot/" ".bash_history" "../" "./")
+)
+
+;; ----- ido-unc-hosts-cache -----
+t
