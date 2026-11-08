@@ -14,7 +14,7 @@ set $term foot
 #set $browser firefox
 
 # Display
-output HDMI-0 mode 1980x1920@75Hz pos 1920 0 scale 1
+output HDMI-0 mode 1920x1080@75Hz pos 1920 0 scale 1
 output * bg ~/Pictures/Wallpapers/Carnation.png fill
 output * allow_tearing yes
 output * max_render_time off
@@ -34,7 +34,7 @@ floating_modifier $mod
 
 # move tiling windows via drag & drop by left-clicking into the title bar,
 # or left-clicking anywhere into the window while holding the floating modifier.
-tiling_drag modifier titlebar
+# tiling_drag modifier titlebar
 
 
 bindsym $mod+Return exec $term 
