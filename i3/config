@@ -24,6 +24,10 @@ output * max_render_time off
 #    accel_profile "flat"        # Desativa a aceleração do mouse (padrão é "adaptive")
 #    pointer_accel 0.0           # Ajusta a sensibilidade (valores entre -1.0 e 1.0)
 #}
+   input type:keyboard {
+       xkb_layout "br"
+   }
+
 
 
 # NetworkManager
@@ -31,11 +35,6 @@ exec --no-startup-id nm-applet
 
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
-
-# move tiling windows via drag & drop by left-clicking into the title bar,
-# or left-clicking anywhere into the window while holding the floating modifier.
-# tiling_drag modifier titlebar
-
 
 bindsym $mod+Return exec $term 
 bindsym $mod+Shift+q kill
@@ -68,7 +67,7 @@ bindsym $mod+Shift+Up move up
 bindsym $mod+Shift+Right move right
 
 # split in horizontal
-bindsym $mod+h split h
+bindsym $mod+Shift+v split h
 # split in vertical
 bindsym $mod+v split v
 
