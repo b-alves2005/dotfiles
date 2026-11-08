@@ -161,9 +161,9 @@ bindsym $mod+z mode "special"
 bindsym Print exec grim
 
 
-client.focused #9b8d7f #9b8d7f #000000 #9b8d7f #9b8d7f
-client.focused_inactive #202020 #202020 #9b8d7f #202020 #202020
-client.unfocused #202020 #202020 #9b8d7f #202020 #202020
+client.focused #ffffff #ffffff #000000 #ffffff #ffffff
+client.focused_inactive #202020 #202020 #ffffff #202020 #202020
+client.unfocused #202020 #202020 #ffffff #202020 #202020
 
 bar {
     # swaybar_command swaybar
@@ -177,14 +177,14 @@ bar {
   separator_symbol "::"
   colors {
     background #222222
-    statusline #9b8d7f
-    separator #9b8d7f
+    statusline #ffffff
+    separator #ffffff
 
-    focused_workspace #9b8d7f #9b8d7f #222222
-    inactive_workspace #222222 #222222 #9b8d7f
-    active_workspace #222222 #222222 #9b8d7f
-    urgent_workspace #222222 #222222 #9b8d7f
-    binding_mode #222222 #222222 #9b8d7f
+    focused_workspace #ffffff #ffffff #222222
+    inactive_workspace #222222 #222222 #ffffff
+    active_workspace #222222 #222222 #ffffff
+    urgent_workspace #222222 #222222 #ffffff
+    binding_mode #222222 #222222 #ffffff
   }
   font pango:Iosevka Term 12
   tray_output HDMI-A-0
