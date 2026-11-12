@@ -1,0 +1,8 @@
+font = IosevkaNerdFont:size=14
+
+[main]
+#include=/usr/share/foot/themes/tokyonight-night
+
+[colors]
+background=1c1c1c
+alpha=0.9
