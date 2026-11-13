@@ -1,4 +1,4 @@
-font pango:Iosevka Nerd Font 10
+font pango:ComicShannsMono Nerd Font 10
 set $mod Mod4
 
 set $left h
@@ -22,6 +22,8 @@ input "1241:64560:USB_Gaming_Mouse" {
 }
    input type:keyboard {
        xkb_layout "br"
+       repeat_delay 350
+       repeat_rate 40
    }
 
 
@@ -92,14 +94,9 @@ input "1241:64560:USB_Gaming_Mouse" {
     bindsym $mod+Shift+8 move container to workspace number 8
     bindsym $mod+Shift+9 move container to workspace number 9
     bindsym $mod+Shift+0 move container to workspace number 10
-    # Note: workspaces can have any name you want, not just numbers.
-    # We just use 1-10 as the default.
 #
 # Layout stuff:
 #
-    # You can "split" the current object of your focus with
-    # $mod+b or $mod+v, for horizontal and vertical splits
-    # respectively.
     bindsym $mod+b splith
     bindsym $mod+v splitv
 
@@ -124,21 +121,12 @@ input "1241:64560:USB_Gaming_Mouse" {
 #
     # Sway has a "scratchpad", which is a bag of holding for windows.
     # You can send windows there and get them back later.
-
-    # Move the currently focused window to the scratchpad
     bindsym $mod+Shift+minus move scratchpad
-
-    # Show the next scratchpad window or hide the focused scratchpad window.
-    # If there are multiple scratchpad windows, this command cycles through them.
     bindsym $mod+minus scratchpad show
 #
 # Resizing containers:
 #
 mode "resize" {
-    # left will shrink the containers width
-    # right will grow the containers width
-    # up will shrink the containers height
-    # down will grow the containers height
     bindsym $left resize shrink width 10px
     bindsym $down resize grow height 10px
     bindsym $up resize shrink height 10px
@@ -153,13 +141,22 @@ mode "resize" {
     # Return to default mode
     bindsym Return mode "default"
     bindsym Escape mode "default"
-}
+    }
 bindsym $mod+r mode "resize"
 
 
 # Utilities:
-    # Special key to take a screenshot with grim
-    bindsym Print exec grim
+mode "special" {
+  bindsym c exec wl-color-picker clipboard; mode "default" 
+  bindsym s exec slurp | grim -g - - | wl-copy; mode "default"
+  bindsym a exec grim -g "$(slurp -o -f '%x,%y %wx%h')" "$HOME/screenshot-$(date +%Y%m%d-%H%M%S).png"; mode "default"
+  bindsym Shift+s grim -g "$(slurp)" "$HOME/screenshot-$(date +%Y%m%d-%H%M%S).png"; mode "default"
+  bindsym Return mode "default"
+  bindsym Escape mode "default"
+}
+
+bindsym $mod+z mode "special"
+
 
 #
 # Status Bar:

@@ -1,7 +1,9 @@
 (setq custom-file "~/.emacs.custom.el")
 
-(add-to-list 'default-frame-alist'(font . "IosevkaNerdFont-18"))
+(add-to-list 'default-frame-alist'(font . "ComicShannsMono Nerd Font-18"))
 
+
+(cua-mode 1)
 (electric-pair-mode 1)
 (tool-bar-mode -1)
 (menu-bar-mode -1)
@@ -10,31 +12,37 @@
 (ido-everywhere 1)
 (fido-mode 1)
 
-(add-to-list 'default-frame-alist '(alpha-background . 85))
+(define-key key-translation-map (kbd "ESC") (kbd "C-g"))
+(global-set-key (kbd "C-S-z") 'undo-redo)
+
+(setq create-lockfiles nil)
+(setq backup-directory-alist `(("." . ,(concat user-emacs-directory "backups/"))))
+(setq auto-save-file-name-transforms `((".*" ,(concat user-emacs-directory "auto-saves/") t)))
+
+(add-to-list 'default-frame-alist '(alpha-background . 100))
 
 (load-file "~/.emacs.local/simpc-mode.el")
-
 (require 'simpc-mode)
 (add-to-list 'auto-mode-alist '("\\.[hc]\\(pp\\)?\\'" . simpc-mode))
 (add-to-list 'auto-mode-alist '("\\.[b]\\'" . simpc-mode))
 
-(use-package doom-modeline
-  :ensure t
-  :init (doom-modeline-mode 1))
+(require 'multiple-cursors)
+(global-set-key (kbd "C-6") 'mc/mark-next-like-this)
+(global-set-key (kbd "C-7") 'mc/mark-previous-like-this)
+(global-set-key (kbd "C-8") 'mc/mark-all-like-this)
 
-;; Set up package.el to work with MELPA
-(require 'package)
-(add-to-list 'package-archives
-             '("melpa" . "https://melpa.org/packages/"))
-(package-initialize)
-(package-refresh-contents)
+(load-file "~/.emacs.local/duplicate-line.el")
+(global-set-key (kbd "C-,") 'duplicate-line)
 
-;; Download Evil
-(unless (package-installed-p 'evil)
-  (package-install 'evil))
+(load-file "~/.emacs.local/move-line.el")
+(global-set-key [(meta up)]  'move-line-up)
+(global-set-key [(meta down)]  'move-line-down)
 
 ;; Enable Evil
-(require 'evil)
-(evil-mode 1)
+;;(require 'evil)
+;;(evil-mode 1)
+;;(require 'doom-modeline)
+;;(doom-modeline-mode 1)
+
 
 (load-file custom-file)

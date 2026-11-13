@@ -5,6 +5,7 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
+ '(auto-save-default nil)
  '(custom-enabled-themes '(tangonov))
  '(custom-safe-themes
    '("a45c79f9597eff562cc6e5ebee5209511e2a976ed631c186032db075ce645e40"
@@ -12,7 +13,7 @@
  '(display-line-numbers 'relative)
  '(indent-tabs-mode nil)
  '(inhibit-startup-screen t)
- '(package-selected-packages '(doom-modeline evil tangonov-theme))
+ '(package-selected-packages '(multiple-cursors tangonov-theme))
  '(tab-width 4))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
